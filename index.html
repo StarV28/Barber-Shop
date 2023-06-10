@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>layout «Barber-Shop»</title>
+</head>
+
+<body>
+	<picture><source srcset="img/oboi-chel-programmer.webp" type="image/webp"><img class="rootimg" src="img/oboi-chel-programmer.jpg" alt="fon-foto"></picture>
+	<div class="rootpage">
+		<h1>layout «Barber-Shop»</h1>
+		<div class="rootpage__info">
+			Description of the project
+		</div>
+		<h2>Ready pages:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="main.html">Home</a></li>
+			<li><a target="_blank" href="contacts.html">Contacts</a></li>
+			<li><a target="_blank" href="gallery.html">Gallery</a></li>
+			<li><a target="_blank" href="gallery-master-one.html">gallery-master-one</a></li>
+			<li><a target="_blank" href="gallery-master-two.html">gallery-master-two</a></li>
+			<li><a target="_blank" href="gallery-master-three.html">gallery-master-three</a></li>
+			<li><a target="_blank" href="common.html">Common</a></li>
+		</ol>
+		<!-- <h2>Попапи:</h2>
+    <ol class="rootpage__list">
+      <li><a target="_blank" href="home.html#"></a></li>
+    </ol> -->
+		<div class="rootpage__tnx">
+			<h2>Thank you for the order!</h2>
+			<p>I would appreciate a good review.</p>
+			<p>Contact again!</p>
+		</div>
+		<div class="rootpage__contacts">
+			<h2>My contacts:</h2>
+			<p>Mail: <a href="mailto:vladimirstar80@gmail.com">vladimirstar80@gmail.com</a></p>
+			<p>Phone: <a href="tel:+380661210934">+380 66 121 09 34</a></p>
+			<!-- <p>Соц. мережі: <a href="">посилання</a></p> -->
+		</div>
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+		background-color: #000;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #ebe691;
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #ebe691;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		position: relative;
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.rootimg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #ebe691;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #ebe691;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 0;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 0;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		/* background: rgba(232, 214, 214, 0.604); */
+
+	}
+
+	.rootpage__contacts a {
+		color: #ebe691;
+	}
+
+	.rootpage__tnx {
+		/* background: rgba(232, 214, 214, 0.604); */
+		margin: 0px 0px 1rem 0px;
+	}
+</style>
+
+</html>
