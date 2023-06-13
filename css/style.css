@@ -912,6 +912,18 @@ textarea.input {
 
 .first-page__contents {
   position: relative;
+  z-index: 2;
+}
+
+.img-first::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(37, 29, 26, 0.3);
+  z-index: 1;
 }
 
 .contents-first {
